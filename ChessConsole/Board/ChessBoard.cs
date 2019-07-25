@@ -18,5 +18,10 @@
             return pieces[row, column];
         }
 
+        public void AddPiece(Piece piece, Position p)
+        {
+            pieces[p.row, p.column] = piece;
+            piece.position = p;
+        }
     }
 }

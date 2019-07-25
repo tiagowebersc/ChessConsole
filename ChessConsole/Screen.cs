@@ -10,9 +10,10 @@ namespace ChessConsole
         {
             for (int i = 0; i < board.rows; i++)
             {
+                Console.WriteLine("---------------------------------");
                 for (int j = 0; j < board.columns; j++)
                 {
-                    if (j > 0 && j < board.columns) Console.Write(" ");
+                    Console.Write("|");
                     if (board.Piece(i, j) == null)
                     {
                         Console.Write(" - ");
@@ -22,9 +23,9 @@ namespace ChessConsole
                         Console.Write(" " + board.Piece(i, j) + " ");
                     }
                 }
-                Console.WriteLine();
-                Console.WriteLine();
+                Console.WriteLine("|");
             }
+            Console.WriteLine("---------------------------------");
 
 
         }

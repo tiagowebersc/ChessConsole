@@ -15,6 +15,10 @@ namespace ChessConsole
                 board.InsertPiece(new Rook(board, Color.White), new Position(4, 6));
 
                 Screen.showBoard(board);
+
+                ChessPosition cp = new ChessPosition('D', 3);
+                Console.WriteLine(cp);
+                Console.WriteLine(cp.ToPosition());
             }
             catch (BoardException e)
             {

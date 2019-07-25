@@ -9,9 +9,7 @@ namespace ChessConsole
         {
             ChessBoard b = new ChessBoard(8,8);
 
-            Position p = new Position(3, 4);
-
-            Console.WriteLine("Position: " + p);
+            Screen.showBoard(b);
             Console.ReadLine();
         }
     }
